@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <title>Md Mahbubur Rahman | Research Publications</title>
+    <meta name="description" content="Research publications by Md Mahbubur Rahman in AI, Machine Learning, Computer Vision, and Multimodal Intelligence.">
+    
+    <!-- Stylesheets and scripts -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar-styles.css"> <!-- Added new navbar styles -->
+    <link rel="stylesheet" href="publications.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <!-- Font Awesome 4.7 for compatibility with existing footer icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Components includes -->
+    <script src="components/include.js"></script>
+</head>
+<body class="publications-page">
+    <!-- Navigation placeholder -->
+    <div id="navigation-placeholder"></div>
+
+    <!-- Publications Hero Section -->
+    <section class="publications-hero">
+        <div class="max-width">
+            <div class="hero-content">
+                <h1>Research Publications</h1>
+                <p>My contributions to the fields of Computer Vision, AI, and Machine Learning</p>
+            </div>
+            <div class="citation-metrics">
+                <div class="metric">
+                    <div class="metric-value">6+</div>
+                    <div class="metric-label">Publications</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">40+</div>
+                    <div class="metric-label">Citations</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">1+</div>
+                    <div class="metric-label">h-index</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication filters and search -->
+    <section class="publications-filters">
+        <div class="max-width">
+            <div class="search-container">
+                <input type="text" id="publication-search" placeholder="Search publications...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <span class="filter-label">Type:</span>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="thesis">Thesis</button>
+                        <button class="filter-btn" data-filter="journal">Journal</button>
+                        <button class="filter-btn" data-filter="conference">Conference</button>
+                        <button class="filter-btn" data-filter="workshop">Workshop</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Year:</span>
+                    <div class="filter-options">
+                        <button class="year-btn active" data-year="all">All</button>
+                        <button class="year-btn" data-year="2025">2025</button>
+                        <button class="year-btn" data-year="2024">2024</button>
+                        <button class="year-btn" data-year="2021">2021</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications List Section -->
+    <section class="publications-list-section">
+        <div class="max-width">
+            <div class="publications-container">
+
+                <!-- Thesis Publication 1 -->
+                <div class="publication-item" data-category="thesis" data-year="2025">
+                    <div class="publication-type journal">
+                        <i class="fas fa-book"></i>
+                        <span>Thesis</span>
+                    </div>
+                    
+                    <div class="publication-content">
+                        <h2>Semantic Discrepancy and Hierarchical Reasoning for Multimodal Rumor Detection</h2>
+                        <div class="authors">Md Mahbubur Rahman</div>
+                        <div class="publication-details">
+                            <div class="venue">Beijing Institute of Technology</div>
+                            <div class="publication-date">2025</div>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>In the age of rapid digital communication, social media has become a leading platform for consuming and sharing information. This transformation has also made it easier for rumors and false narratives to spread rapidly, often reaching large audiences within hours. </p>
+                        </div>
+                        
+                        <div class="keywords">
+                            <span class="keyword">Multimodal Learning</span>
+                            <span class="keyword">Rumor Detection</span>
+                            <span class="keyword">Deep Learning</span>
+                        </div>
+                        
+                        <div class="publication-links">
+                            <a href="https://www.researchgate.net/publication/396462166_Semantic_Discrepancy_and_Hierarchical_Reasoning_for_Multimodal_Rumor_Detection" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Paper
+                            </a>
+                            <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-code"></i> Code
+                            </a>
+                            <button class="abstract-toggle">
+                                <i class="fas fa-chevron-down"></i> Full Abstract
+                            </button>
+                        </div>
+                        
+                        <div class="full-abstract">
+                            <p>Unlike earlier forms of disinformation that were primarily text-based, modern rumors often combine both text and images to construct compelling but deceptive stories. Detecting such multimodal rumors presents new challenges, as it requires understanding not just each piece of content in isolation, but how they work together to mislead. Traditional rumor detection models aim to identify such content by relying on textual cues or employing shallow multimodal fusion techniques to align modalities of information. However, these approaches often struggle to capture the complex semantic interplay between modalities, especially when faced with semantic discrepancies or emotionally enforced visual cues. This is due to their inability to effectively model the subtle semantic variation, hierarchical, and non-linear relationships that exist between different modalities. Despite recent advances, existing rumor detection models face two critical challenges: (1) Existing methods often treat semantic discrepancies or ambiguities as noise during the fusion of visual and textual modalities. This neglect causes the models to overlook essential cross-modal interdependencies, ultimately leading to poor performance. (2) Most approaches assume a one-to-one correspondence between visual and linguistic features, ignoring the richer hierarchical relationships that bridge different semantic levels across modalities. As a result, models often fail to capture the layered structure of meaning and overlook important hierarchical cues. To address these challenges, this study presents the following key contributions: (1) The study introduces RADAR, a framework that treats semantic discrepancies not as noise to be reduced or ignored, but as valuable signals that can enhance detection. RADAR focuses on amplifying them by incorporating three modules: First, the Semantic Discrepancy Amplifier (SDA), a multi-head attention mechanism that dynamically detects and amplifies mismatches between modalities. Second, these differences are improved using Progressive Feature Purification (PFP), which adjusts filters to remove unnecessary noise while keeping important signals. Third, the Feature Feedback Loop (FFL) continuously improves the quality of the features. Together, these components form a pipeline that effectively highlights subtle inconsistencies often found in rumor content. RADAR achieves state-of-the-art results, with 96.0\% accuracy on the Twitter dataset and 91.2\% on Weibo, effectively detecting both rumors and non-rumors by amplifying semantic discrepancies. (2) This paper proposes the RumorCone framework that incorporates semantic hierarchies using hyperbolic geometry to preserve hierarchical, non-linear relationships, rather than representing them at a flat semantic level. It decomposes both image and text content into three levels: base, mid, and high-level abstractions. First, it places these different types of information into a hyperbolic space to preserve their natural tree-like shape and show how they interact non-linearly. Second, the model uses cross-modal hyperbolic attention, which focuses on important features from each modality at every level while maintaining consistency across modalities. Additionally, hierarchical semantic processing ensures that text and image features are aligned at each level of abstraction, further enhancing the model's ability to identify misalignments. Third, it uses a flexible fusion method that dynamically adjusts the contribution of each modality based on its alignment. RumorCone achieved improved performance 86.76\% F1-score on MR²-E and 85.48\% on MR²-C by utilizing hierarchical reasoning in hyperbolic space. The study further evaluates through cross-lingual experiments, gathering 100 recent social media posts in five languages and including various scenarios across multiple platforms. It achieved 83\% accuracy on high-resource languages such as English and Chinese; performance declines to 68\% for Bengali and Hindi due to translation-induced semantic shifts, with baselines performing even worse. The research demonstrated that semantic discrepancies serve as significant indicators of rumor content, while hierarchical semantic reasoning enhances the accuracy of content-based detection. Cross-lingual evaluation revealed the necessity for datasets covering low-resource languages.</p>
+                            <div class="citation-box">
+                                <h4>Citation</h4>
+                                <pre class="citation-text">Md Mahbubur Rahman</pre>
+                                <div class="citation-actions">
+                                    <button class="copy-citation" data-citation="Md Mahbubur Rahman, (2024). Semantic Discrepancy and Hierarchical Reasoning for Multimodal Rumor Detection. Beijing Institute of Technology.">
+                                        <i class="fas fa-copy"></i> Copy Citation
+                                    </button>
+                                    <a href="#" class="download-citation" download>
+                                        <i class="fas fa-file-download"></i> BibTeX
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Conference Publication -->
+                <div class="publication-item" data-category="conference" data-year="2025">
+                    <div class="publication-type conference">
+                        <i class="fas fa-microphone-alt"></i>
+                        <span>Conference</span>
+                    </div>
+                    
+                    <div class="publication-content">
+                        <h2>Exploring Hyperbolic Hierarchical Structure for
+                            Multimodal Rumor Detection.</h2>
+                        <div class="authors">Md Mahbubur Rahman, Shufeng Hao, Chongyang Shi, An Lao, Jinyan Liu</div>
+                        <div class="publication-details">
+                            <div class="venue">The 2025 Conference on Empirical Methods in Natural Language Processing, Association for Computational Linguists (ACL)</div>
+                            <div class="publication-date">2025</div>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>The rapid growth of social media platforms has made the spread of rumors a significant issue, frequently driven by both textual and visual content.</p>
+                        </div>
+                        
+                        <div class="keywords">
+                            <span class="keyword">Computer Vision</span>
+                            <span class="keyword">Object Detection</span>
+                            <span class="keyword">Deep Learning</span>
+                        </div>
+                        
+                        <div class="publication-links">
+                            <a href="https://openreview.net/forum?id=Eyj26Y5iQ3&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DEMNLP%2F2025%2FConference%2FAuthors%23your-submissions)" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Paper
+                            </a>
+                            <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-code"></i> Code
+                            </a>
+                            <button class="abstract-toggle">
+                                <i class="fas fa-chevron-down"></i> Full Abstract
+                            </button>
+                        </div>
+                        
+                        <div class="full-abstract">
+                            <p>Traditional rumor detection models generally rely on semantic alignment between modalities, thus suppressing modality inconsistencies as noise. However, semantic variations, such as neutral visuals paired with deceptive text, could serve as deliberate indicators of rumor. To address this problem, we propose a novel multimodal Rumor Amplification Detection And Reasoning (RADAR) framework that interprets cross-modal discrepancies as potential indicators to be amplified. RADAR contains a semantic discrepancy amplifier (SDA) module, a progressive feature purification (PFP) module, and a feature feedback loop (FFL) module. First, SDA employs an adaptive amplification technique to amplify the discrepancies between modalities and uses a attention mechanism to capture variations across semantic levels. Then PFP gradually refines the features on the different discrepancy levels to capture highly suspicious rumor content. Finally, FFL iteratively strengthens semantic representations using discrepancy-aware purification cycles for deeper reasoning over complex rumor patterns. Extensive experiments on large-scale datasets on Weibo and Twitter demonstrate that RADAR can detect cross-modal rumors more effectively than current techniques.</p>
+                            <div class="citation-box">
+                                <h4>Citation</h4>
+                                <pre class="citation-text">Md Mahbubur Rahman, Shufeng Hao, Chongyang Shi, An Lao, Jinyan Liu (2025), The 2025 Conference on Empirical Methods in Natural Language Processing, Association for Computational Linguists (ACL)</pre>
+                                <div class="citation-actions">
+                                    <button class="copy-citation" data-citation="Md Mahbubur Rahman, Shufeng Hao, Chongyang Shi, An Lao, Jinyan Liu (2025), Exploring Hyperbolic Hierarchical Structure for
+                                    Multimodal Rumor Detection, The 2025 Conference on Empirical Methods in Natural Language Processing, Association for Computational Linguists (ACL)">
+                                        <i class="fas fa-copy"></i> Copy Citation
+                                    </button>
+                                    <a href="#" class="download-citation" download>
+                                        <i class="fas fa-file-download"></i> BibTeX
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- journal Publication -->
+                <div class="publication-item" data-category="journal" data-year="2025">
+                    <div class="publication-type workshop">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Journal</span>
+                    </div>
+                    
+                    <div class="publication-content">
+                        <h2>Elevating Intrusion Detection and Security Fortification in
+                            Intelligent Networks through Cutting-Edge Machine Learning Paradigms.</h2>
+                        <div class="authors">Md Minhazul Islam Munna, Md Mahbubur Rahman, Jaroslav Frnda, Muhammad Shahid
+                            Anwar∗, and Alpamis Kutlimuratov∗</div>
+                        <div class="publication-details">
+                            <div class="venue">Scientific Reports, Springer Nature</div>
+                            <div class="publication-date">2025</div>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>The proliferation of IoT devices and their reliance on Wi-Fi networks
+                                have introduced significant security vulnerabilities, particularly the KRACK and
+                                Kr00k attacks, which exploit weaknesses in WPA2 encryption to intercept and
+                                manipulate sensitive data.</p>
+                        </div>
+                        
+                        <div class="keywords">
+                            <span class="keyword">Network Security</span>
+                            <span class="keyword">Anomaly Detection</span>
+                            <span class="keyword">Machine Learning</span>
+                        </div>
+                        
+                        <div class="publication-links">
+                            <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Paper
+                            </a>
+                            <a href="https://github.com/rahmanmahbub073/Anomaly-Classification" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-code"></i> Code
+                            </a>
+                            <button class="abstract-toggle">
+                                <i class="fas fa-chevron-down"></i> Full Abstract
+                            </button>
+                        </div>
+                        
+                        <div class="full-abstract">
+                            <p>Traditional intrusion detection systems (IDS) using
+                                classifiers face challenges such as model overfitting, incomplete feature extraction,
+                                andhighfalse positive rates, limiting their effectiveness in real-world deployments.
+                                Toaddress these challenges, this study proposes a robust multiclass machine learn
+                               ing based intrusion detection framework. The methodology integrates advanced
+                                feature selection techniques to identify critical attributes, mitigating redundancy
+                                and enhancing detection accuracy. Two distinct ML architectures are imple
+                               mented: a baseline classifier pipeline and a stacked ensemble model combining
+                                noise injection, Principal Component Analysis (PCA), and meta learning to im
+                               prove generalization and reduce false positives. Evaluated on the AWID3 dataset,
+                                the proposed ensemble architecture achieves superior performance, with an ac
+                               curacy of 98%, precision of 98%, recall of 98%, and a false positive rate of just
+                                2%, outperforming existing state-of-the-art methods. This work demonstrates the
+                                efficacy of combining preprocessing strategies with ensemble learning to fortify
+                                network security against sophisticated Wi-Fi attacks, offering a scalable and reli
+                               able solution for IoTenvironments. Futuredirectionsincludereal-timedeployment
+                                and adversarial resilience testing to further enhance the model’s adaptability.</p>
+                            <div class="citation-box">
+                                <h4>Citation</h4>
+                                <pre class="citation-text">Rahman, M., Wang, H., Zhao, K. (2022). Network Traffic Anomaly Detection Using Hybrid Machine Learning Approaches. In Proceedings of the Workshop on Security and Privacy in Machine Learning, ACM SIGSAC, pp. 123-130.</pre>
+                                <div class="citation-actions">
+                                    <button class="copy-citation" data-citation="Rahman, M., Wang, H., Zhao, K. (2022). Network Traffic Anomaly Detection Using Hybrid Machine Learning Approaches. In Proceedings of the Workshop on Security and Privacy in Machine Learning, ACM SIGSAC, pp. 123-130.">
+                                        <i class="fas fa-copy"></i> Copy Citation
+                                    </button>
+                                    <a href="#" class="download-citation" download>
+                                        <i class="fas fa-file-download"></i> BibTeX
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- journal Publication -->
+                <div class="publication-item" data-category="journal" data-year="2024">
+                    <div class="publication-type workshop">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Journal</span>
+                    </div>
+                    
+                    <div class="publication-content">
+                        <h2>A survey on intrusion detection system in IoT networks.</h2>
+                        <div class="authors">Md Mahbubur Rahman, Shaharia Al Shakil, Mizanur Rahman Mustakim</div>
+                        <div class="publication-details">
+                            <div class="venue">Scientific Reports, Springer Nature</div>
+                            <div class="publication-date">2024</div>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>The proliferation of IoT devices and their reliance on Wi-Fi networks
+                                have introduced significant security vulnerabilities, particularly the KRACK and
+                                Kr00k attacks, which exploit weaknesses in WPA2 encryption to intercept and
+                                manipulate sensitive data.</p>
+                        </div>
+                        
+                        <div class="keywords">
+                            <span class="keyword">Network Security</span>
+                            <span class="keyword">Anomaly Detection</span>
+                            <span class="keyword">Machine Learning</span>
+                        </div>
+                        
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.1016/j.csa.2024.100082" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Paper
+                            </a>
+                            <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-code"></i> Code
+                            </a>
+                            <button class="abstract-toggle">
+                                <i class="fas fa-chevron-down"></i> Full Abstract
+                            </button>
+                        </div>
+                        
+                        <div class="full-abstract">
+                            <p>Traditional intrusion detection systems (IDS) using
+                                classifiers face challenges such as model overfitting, incomplete feature extraction,
+                                andhighfalse positive rates, limiting their effectiveness in real-world deployments.
+                                Toaddress these challenges, this study proposes a robust multiclass machine learn
+                               ing based intrusion detection framework. The methodology integrates advanced
+                                feature selection techniques to identify critical attributes, mitigating redundancy
+                                and enhancing detection accuracy. Two distinct ML architectures are imple
+                               mented: a baseline classifier pipeline and a stacked ensemble model combining
+                                noise injection, Principal Component Analysis (PCA), and meta learning to im
+                               prove generalization and reduce false positives. Evaluated on the AWID3 dataset,
+                                the proposed ensemble architecture achieves superior performance, with an ac
+                               curacy of 98%, precision of 98%, recall of 98%, and a false positive rate of just
+                                2%, outperforming existing state-of-the-art methods. This work demonstrates the
+                                efficacy of combining preprocessing strategies with ensemble learning to fortify
+                                network security against sophisticated Wi-Fi attacks, offering a scalable and reli
+                               able solution for IoTenvironments. Futuredirectionsincludereal-timedeployment
+                                and adversarial resilience testing to further enhance the model’s adaptability.</p>
+                            <div class="citation-box">
+                                <h4>Citation</h4>
+                                <pre class="citation-text">@article{RAHMAN2025100082,
+                                    author = {Md Mahbubur Rahman and Shaharia Al Shakil and Mizanur Rahman Mustakim},
+                                    title = {A survey on intrusion detection system in IoT networks},
+                                    journal = {Cyber Security and Applications},
+                                    volume = {3},
+                                    pages = {100082},
+                                    year = {2025},
+                                    issn = {2772-9184},
+                                    doi = {https://doi.org/10.1016/j.csa.2024.100082},
+                                    url = {https://www.sciencedirect.com/science/article/pii/S2772918424000481},
+                                    </pre>
+                                <div class="citation-actions">
+                                    <button class="copy-citation" data-citation="Md Mahbubur Rahman and Shaharia Al Shakil and Mizanur Rahman Mustakim, A survey on intrusion detection system in IoT networks, Cyber Security and Applications,3, 100082,2025, 2772-9184, https://doi.org/10.1016/j.csa.2024.100082">
+                                        <i class="fas fa-copy"></i> Copy Citation
+                                    </button>
+                                    <a href="#" class="download-citation" download>
+                                        <i class="fas fa-file-download"></i> BibTeX
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conference Publication -->
+                <div class="publication-item" data-category="conference" data-year="2026">
+                    <div class="publication-type conference">
+                        <i class="fas fa-microphone-alt"></i>
+                        <span>Conference</span>
+                    </div>
+                    
+                    <div class="publication-content">
+                        <h2>Semantic Discrepancy Amplification for Multimodal
+                            RumorDetection.</h2>
+                        <div class="authors">Md Mahbubur Rahman, Shufeng Hao, Chongyang Shi, Jinyan Liu and Abu Rayhan Soton</div>
+                        <div class="publication-details">
+                            <div class="venue">WWW2026 (The ACM Web Conference 2026)</div>
+                            <div class="publication-date">Submitted</div>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>The rapid growth of social media platforms has made the spread
+                                of rumors a significant issue, frequently driven by both textual
+                                and visual content.</p>
+                        </div>
+                        
+                        <div class="keywords">
+                            <span class="keyword">Computer Vision</span>
+                            <span class="keyword">Rumor Detection</span>
+                            <span class="keyword">Deep Learning</span>
+                        </div>
+                        
+                        <div class="publication-links">
+                            <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Paper
+                            </a>
+                            <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-code"></i> Code
+                            </a>
+                            <button class="abstract-toggle">
+                                <i class="fas fa-chevron-down"></i> Full Abstract
+                            </button>
+                        </div>
+                        
+                        <div class="full-abstract">
+                            <p>Traditional rumor detection models generally
+                                rely on semantic alignment between modalities, thus suppressing
+                                modality inconsistencies as noise. However, semantic variations,
+                                such as neutral visuals paired with deceptive text, could serve as
+                                deliberate indicators of rumor. To address this problem, we propose
+                                a novel multimodal Rumor Amplification Detection And Reasoning
+                                (RADAR) framework that interprets cross-modal discrepancies as
+                                potential indicators to be amplified. RADAR contains a semantic
+                                discrepancy amplifier (SDA) module, a progressive feature purifica-
+                                tion (PFP) module, and a feature feedback loop (FFL) module. First,
+                                SDA employs an adaptive amplification technique to amplify the
+                                discrepancies between modalities and uses an attention mechanism
+                                to capture variations across semantic levels. Then PFP gradually
+                                refines the features on the different discrepancy levels to capture
+                                highly suspicious rumor content. Finally, FFL iteratively strength-
+                                ens semantic representations using discrepancy-aware purification
+                                cycles for deeper reasoning over complex rumor patterns. Extensive
+                                experiments on large-scale datasets on MR2-C, MR2-E, Weibo, and
+                                Twitter demonstrate that RADAR can detect cross-modal rumors
+                                more effectively than current techniques.</p>
+                            <div class="citation-box">
+                                <h4>Citation</h4>
+                                <pre class="citation-text">Md Mahbubur Rahman, Shufeng Hao, Chongyang Shi, An Lao, Jinyan Liu (2025), The 2025 Conference on Empirical Methods in Natural Language Processing, Association for Computational Linguists (ACL)</pre>
+                                <div class="citation-actions">
+                                    <button class="copy-citation" data-citation="Md Mahbubur Rahman, Shufeng Hao, Chongyang Shi, Jinyan Liu and Abu Rayhan Soton, Semantic Discrepancy Amplification for Multimodal Rumor Detection, WWW2026 (The ACM Web Conference 2026)">
+                                        <i class="fas fa-copy"></i> Copy Citation
+                                    </button>
+                                    <a href="#" class="download-citation" download>
+                                        <i class="fas fa-file-download"></i> BibTeX
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Journal Publication -->
+                <div class="publication-item" data-category="journal" data-year="2025">
+                <div class="publication-type workshop">
+                    <i class="fas fa-microphone-alt"></i>
+                    <span>Journal</span>
+                </div>
+                
+                <div class="publication-content">
+                    <h2>Attention-Guided Explainable YOLO for Real-Time
+                        Explicit Content Moderation.</h2>
+                    <div class="authors">Abu Rayhan Soton, Md Mahbubur Rahman, Md Minhazul Islam Munna, et. all</div>
+                    <div class="publication-details">
+                        <div class="venue">IEEE Access</div>
+                        <div class="publication-date">Submitted</div>
+                    </div>
+                    <div class="publication-abstract">
+                        <p>Automated detection of explicit content is essential for safeguarding digital platforms and
+                            ensuring safe online engagement.</p>
+                    </div>
+                    
+                    <div class="keywords">
+                        <span class="keyword">Computer Vision</span>
+                        <span class="keyword">Object Detection</span>
+                        <span class="keyword">Nudity Detection</span>
+                    </div>
+                    
+                    <div class="publication-links">
+                        <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i> Paper
+                        </a>
+                        <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+                        <button class="abstract-toggle">
+                            <i class="fas fa-chevron-down"></i> Full Abstract
+                        </button>
+                    </div>
+                    
+                    <div class="full-abstract">
+                        <p> However, existing detection systems often struggle with accuracy, inter-
+                            pretability, and real-time efficiency, particularly in low-light conditions, complex backgrounds, and resource-
+                            constrained edge devices. To address these gaps, this study introduces three key contributions: (1) a novel
+                            homogeneous ensemble strategy that trains multiple YOLO variants with CSPDenseNet121 backbones
+                            under different frozen parameter configurations and fuses them via transfer learning, capturing hierarchical
+                            feature representations across depths, (2) the integration of visual attention blocks and Explainable AI
+                            (Grad-CAM, LIME, SHAP) to enhance feature extraction while ensuring transparency and accountability,
+                            and (3) a scalable two-stage end-to-edge deployment pipeline optimized for real-time moderation. Unlike
+                            prior heterogeneous backbone ensembles, our approach leverages a unified architecture with varied layer
+                            freezing, reducing bias and variance while maintaining computational efficiency. Robustness is further
+                            reinforced through advanced preprocessing, including normalization, class balancing, and augmentation
+                            with simulated low-light and overexposed conditions. Experimental evaluation demonstrates the effec-
+                            tiveness of the proposed framework. On the DETECTOR_AUTO_GENERATED_DATA (DAGD) dataset,
+                            our CSPDenseNet121 ensemble achieved 0.979 precision, 0.922 recall, and 92.1% accuracy, surpassing
+                            heterogeneous YOLO fusions (accuracy 89.9–91.1%) and prior baselines such as Deep CNN (91.0%).
+                            On a custom stress-test dataset, it attained 0.969 precision, 0.935 recall, and 85.0% accuracy, confirming
+                            robustness under challenging illumination and background variations. These results show that homogeneous
+                            model fusion, attention-driven mechanisms, and real-time deployment collectively advance the state of
+                            explicit content detection. By bridging high-performance AI with interpretability and scalable deployment,
+                            this research provides a comprehensive solution for modern content moderation challenges.</p>
+                        <div class="citation-box">
+                            <h4>Citation</h4>
+                            <pre class="citation-text">Wait Plz</pre>
+                            <div class="citation-actions">
+                                <button class="copy-citation" data-citation="Wait Plz"> 
+                                    <i class="fas fa-copy"></i> Copy Citation
+                                </button>
+                                <a href="#" class="download-citation" download>
+                                    <i class="fas fa-file-download"></i> BibTeX
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                <!-- Technical Report -->
+                <div class="publication-item" data-category="technical" data-year="2025">
+                    <div class="publication-type technical">
+                        <i class="fas fa-file-alt"></i>
+                        <!-- <span>Technical Report</span> -->
+                        <span>Conference</span>
+                    </div>
+                    
+                    <div class="publication-content">
+                        <h2>Explainable Fake News Detection in Bengali via
+                            LLM-Guided Hybrid Representations</h2>
+                        <div class="authors">Rahman, M., Zhang, Y.</div>
+                        <div class="publication-details">
+                            <div class="venue"> ICCIT 2025 (IEEE Bangladesh)</div>
+                            <div class="publication-date">Submitted</div>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>Detecting fake news on social media is particularly
+                                challenging for low-resource languages like Bengali, where anno
+                               tated data and pretrained tools are scarce.</p>
+                        </div>
+
+                        <div class="keywords">
+                            <span class="keyword">Fake News</span>
+                            <span class="keyword">Explainable AI</span>
+                            <span class="keyword">Low-resource NLP</span>
+                        </div>
+                        
+                        <div class="publication-links">
+                            <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Report
+                            </a>
+                            <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-chart-bar"></i> Results
+                            </a>
+                            <button class="abstract-toggle">
+                                <i class="fas fa-chevron-down"></i> Full Abstract
+                            </button>
+                        </div>
+                        
+                        <div class="full-abstract">
+                            <p> Existing approaches
+                                are generally extracting local features (e.g., TF-IDF, CNN) or
+                                global semantics (e.g., BERT) but rarely their combination
+                                while being interpretable. We propose an explainable two
+                               stage framework for Bengali fake news detection. In the first
+                                stage, a LLaMA3 module gives formalized explanations (analysis,
+                                indicators, conclusion) of every article. These are embedded with
+                                Bangla-BERT to yield semantic vectors. In the second stage,
+                                the explanation embeddings are fused with TF-IDF and CNN
+                               based local features into a hybrid representation, enabling the
+                                model to learn both the content and its rationale. Evaluated on
+                                BanFakeNews and BFRD, our system achieves state-of-the-art
+                                performance (95.3% accuracy on BanFakeNews) while providing
+                                interpretable outputs. The system is suitable for real-time tasks
+                                in low-resource settings that are sensitive to misinformation.</p>
+                            <div class="citation-box">
+                                <h4>Citation</h4>
+                                <pre class="citation-text">Wait plz</pre>
+                                <div class="citation-actions">
+                                    <button class="copy-citation" data-citation="Wait plz">
+                                        <i class="fas fa-copy"></i> Copy Citation
+                                    </button>
+                                    <a href="#" class="download-citation" download>
+                                        <i class="fas fa-file-download"></i> BibTeX
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Preprint -->
+                <div class="publication-item" data-category="thesis" data-year="2021">
+                    <div class="publication-type preprint">
+                        <i class="fas fa-scroll"></i>
+                        <span>Dissertation</span>
+                    </div>
+                    
+                    <div class="publication-content">
+                        <h2>Image Content Review System Based on Deep Learning Object Identification</h2>
+                        <div class="authors">Md Mahbubur Rahman</div>
+                        <div class="publication-details">
+                            <div class="venue">Chongqing University of Science and Technology</div>
+                            <div class="publication-date">2021</div>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>Object detection is one of the primary tasks in computer vision which contains determining the location on the image where confident objects are present, as well as classifying those objects.</p>
+                        </div>
+                        
+                        <div class="keywords">
+                            <span class="keyword">Deep Learning</span>
+                            <span class="keyword">Object detection</span>
+                            <span class="keyword">Nudity Detection</span>
+                        </div>
+                        
+                        <div class="publication-links">
+                            <a href="https://www.researchgate.net/publication/396165886_Image_Content_Review_System_Based_on_Deep_Learning_Object_Identification" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Preprint
+                            </a>
+                            <a href="#" class="pub-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-code"></i> Code
+                            </a>
+                            <button class="abstract-toggle">
+                                <i class="fas fa-chevron-down"></i> Full Abstract
+                            </button>
+                        </div>
+                        
+                        <div class="full-abstract">
+                            <p>Meanwhile, however, the problem of pornography through the Internet access in the place of work, at home and in education has considerably increased. Therefore, how effectively block or filter out pornography has been arousing a serious anxiety in related research areas. Recently, after the development of Deep Learning techniques, several algorithm have been published like as YOLO, Faster-RCNN, and Mask-RCNN, etc. In 2015, the YOLO (You Only Look Once) algorithm was evolved with a new approach, reframing object detection as a regression problem and performing in a single neural network. That made the object detection field blow up and obtained much more incredible achievements than just a decade ago. So far, combining with many of the most innovative concepts coming out of the computer vision research community, YOLO has been improved well and assessed as one of the outstanding object detection algorithms than its legacy version or others in terms of both accuracy and speed. Now, by the help of this computer vision's algorithm also can detect adult material content from images and also real-time videos. With the rapid development of Artificial Intelligence, using deep learning algorithms to detect image content, can effectively relief the workload of manual auditing, and can improve the efficiency as well. Nowadays, developers can use this algorithm in their platform to detect nudity or other's detection related issues. This thesis investigates the most advanced inventions in the field of computer vision which were integrated into YOLOv5 as well as we will use this target detection algorithms to train a detection model and deploy the model through web services, providing an auditing API services for images, and build a demo application.</p>
+                            <div class="citation-box">
+                                <h4>Citation</h4>
+                                <pre class="citation-text">Md Mahbubur Rahman, </pre>
+                                <div class="citation-actions">
+                                    <button class="copy-citation" data-citation="Md Mahbubur Rahman (2021), Image Content Review System Based on Deep Learning Object Identification,Chongqing University of Science and Technology .">
+                                        <i class="fas fa-copy"></i> Copy Citation
+                                    </button>
+                                    <a href="#" class="download-citation" download>
+                                        <i class="fas fa-file-download"></i> BibTeX
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- No Results Message -->
+            <div class="no-results">
+                <i class="fas fa-search"></i>
+                <p>No publications match your search criteria</p>
+                <button id="reset-filters">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Profiles Section -->
+    <section class="research-profiles">
+        <div class="max-width">
+            <h2 class="section-title">Research Profiles</h2>
+            <p class="section-description">Connect with me on academic platforms to stay updated with my latest research</p>
+            
+            <div class="profiles-grid">
+                <a href="https://scholar.google.com/citations?user=HqH_EkgAAAAJ&hl=en" target="_blank" class="profile-card">
+                    <div class="profile-icon google-scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Google Scholar</h3>
+                        <p>View my publications and citations</p>
+                    </div>
+                </a>
+                
+                <a href="https://www.researchgate.net/profile/Md-Mahbubur-Rahman-31?ev=hdr_xprf" target="_blank" class="profile-card">
+                    <div class="profile-icon researchgate">
+                        <i class="fab fa-researchgate"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>ResearchGate</h3>
+                        <p>Follow my research activities</p>
+                    </div>
+                </a>
+                
+                <a href="https://orcid.org/my-orcid?orcid=0000-0002-0577-6292" target="_blank" class="profile-card">
+                    <div class="profile-icon orcid">
+                        <i class="fab fa-orcid"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>ORCID</h3>
+                        <p>My unique researcher identifier</p>
+                    </div>
+                </a>
+                
+                <a href="https://www.semanticscholar.org/" target="_blank" class="profile-card">
+                    <div class="profile-icon semantic-scholar">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Semantic Scholar</h3>
+                        <p>AI-powered research tool</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests Section -->
+    <section class="research-interests">
+        <div class="max-width">
+            <h2 class="section-title">Research Interests</h2>
+            
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Computer Vision</h3>
+                    <p>Object detection, image segmentation, and visual understanding in complex environments</p>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Deep Learning</h3>
+                    <p>Neural network architectures, optimization methods, and transfer learning techniques</p>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Multimodal Intelligence</h3>
+                    <p>Integration of multiple data modalities (text, images, audio) for enhanced AI understanding</p>
+                </div>
+                
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Applications</h3>
+                    <p>AI-based security systems, anomaly detection, and content verification</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="collaboration">
+        <div class="max-width">
+            <div class="collaboration-content">
+                <h2>Interested in Research Collaboration?</h2>
+                <p>I'm open to collaborative research projects in AI, computer vision, and multimodal intelligence. If you're working on related topics and interested in collaboration, please reach out.</p>
+                <a href="contact.html" class="collab-btn">
+                    <i class="fas fa-handshake"></i> Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Publication filtering functionality
+            $('.filter-btn').click(function() {
+                const filterValue = $(this).attr('data-filter');
+                
+                // Update active button
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+                
+                filterPublications();
+            });
+            
+            // Year filtering
+            $('.year-btn').click(function() {
+                const yearValue = $(this).attr('data-year');
+                
+                // Update active button
+                $('.year-btn').removeClass('active');
+                $(this).addClass('active');
+                
+                filterPublications();
+            });
+            
+            // Search functionality
+            $('#search-btn').click(function() {
+                filterPublications();
+            });
+            
+            $('#publication-search').on('keyup', function(e) {
+                if (e.key === 'Enter') {
+                    filterPublications();
+                }
+            });
+            
+            // Reset filters
+            $('#reset-filters').click(function() {
+                $('#publication-search').val('');
+                $('.filter-btn[data-filter="all"]').click();
+                $('.year-btn[data-year="all"]').click();
+                
+                $('.publication-item').show();
+                $('.no-results').hide();
+            });
+            
+            // Abstract toggle
+            $(document).on('click', '.abstract-toggle', function() {
+                const fullAbstract = $(this).closest('.publication-content').find('.full-abstract');
+                fullAbstract.slideToggle(300);
+                
+                const icon = $(this).find('i');
+                const text = $(this).text().trim();
+                
+                if (text === 'Full Abstract') {
+                    $(this).html('<i class="fas fa-chevron-up"></i> Hide Abstract');
+                } else {
+                    $(this).html('<i class="fas fa-chevron-down"></i> Full Abstract');
+                }
+            });
+            
+            // Copy citation functionality
+            $(document).on('click', '.copy-citation', function() {
+                const citation = $(this).attr('data-citation');
+                
+                // Create temporary input element
+                const temp = $('<textarea>');
+                $('body').append(temp);
+                temp.val(citation).select();
+                document.execCommand('copy');
+                temp.remove();
+                
+                // Show feedback
+                const originalText = $(this).html();
+                $(this).html('<i class="fas fa-check"></i> Copied!');
+                
+                setTimeout(() => {
+                    $(this).html(originalText);
+                }, 2000);
+            });
+            
+            // Filter publications based on current filters
+            function filterPublications() {
+                const categoryFilter = $('.filter-btn.active').attr('data-filter');
+                const yearFilter = $('.year-btn.active').attr('data-year');
+                const searchQuery = $('#publication-search').val().toLowerCase();
+                
+                let hasVisibleItems = false;
+                
+                $('.publication-item').each(function() {
+                    const category = $(this).attr('data-category');
+                    const year = $(this).attr('data-year');
+                    const content = $(this).text().toLowerCase();
+                    
+                    const matchesCategory = categoryFilter === 'all' || category === categoryFilter;
+                    const matchesYear = yearFilter === 'all' || year === yearFilter;
+                    const matchesSearch = searchQuery === '' || content.includes(searchQuery);
+                    
+                    if (matchesCategory && matchesYear && matchesSearch) {
+                        $(this).show();
+                        hasVisibleItems = true;
+                    } else {
+                        $(this).hide();
+                    }
+                });
+                
+                // Show/hide no results message
+                if (hasVisibleItems) {
+                    $('.no-results').hide();
+                } else {
+                    $('.no-results').show();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

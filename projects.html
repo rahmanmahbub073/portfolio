@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <title>Md Mahbubur Rahman | Projects Experience </title>
+    <meta name="description" content="Explore the AI, Machine Learning, and Software Development projects by Md Mahbubur Rahman - showcasing innovative solutions and technical expertise.">
+    
+    <!-- Stylesheets and scripts -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar-styles.css"> <!-- Added new navbar styles -->
+    <link rel="stylesheet" href="projects.css">
+    <!-- Font Awesome 5 for newer icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- Font Awesome 4.7 for compatibility with existing footer icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Components includes -->
+    <script src="components/include.js"></script>
+</head>
+<body class="projects-page">
+    <!-- Navigation placeholder -->
+    <div id="navigation-placeholder"></div>
+
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
+        <div class="max-width">
+            <div class="hero-content">
+                <h1>Projects Experience</h1>
+                <p>Innovative solutions in AI, Machine Learning, Computer Vision, and Software Development</p>
+            </div>
+            <div class="project-metrics">
+                <div class="metric">
+                    <div class="metric-value">10+</div>
+                    <div class="metric-label">Projects</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">5+</div>
+                    <div class="metric-label">Technologies</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">3+</div>
+                    <div class="metric-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project filters and search -->
+    <section class="projects-filters">
+        <div class="max-width">
+            <div class="search-container">
+                <input type="text" id="project-search" placeholder="Search projects...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <span class="filter-label">Category:</span>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                        <button class="filter-btn" data-filter="dl">Deep Learning</button>
+                        <button class="filter-btn" data-filter="web">Web Development</button>
+                        <button class="filter-btn" data-filter="research">Research</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label">Sort By:</span>
+                    <div class="filter-options">
+                        <button class="sort-btn active" data-sort="newest">Newest</button>
+                        <button class="sort-btn" data-sort="oldest">Oldest</button>
+                        <button class="sort-btn" data-sort="name">Name</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section class="featured-project">
+        <div class="max-width">
+            <div class="featured-badge">Featured Project</div>
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="images/projects/multimodal-rumor-details.PNG" alt="Multimodal Rumor Detection Project">
+                    <div class="featured-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Research</span>
+                    </div>
+                </div>
+                <div class="featured-details">
+                    <h2>Multimodal Rumor Detection</h2>
+                    <div class="featured-date">2024 - 2025</div>
+                    <p class="featured-description">
+                        Semantic Discrepancy and Hierarchical Reasoning for Multimodal Rumor Detection. An innovative framework for detecting rumors by analyzing inconsistencies across text and image modalities.
+                    </p>
+                    <div class="featured-tech">
+                        <span>Python</span>
+                        <span>Deep Learning</span>
+                        <span>PyTorch</span>
+                        <span>NLP</span>
+                        <span>Computer Vision</span>
+                    </div>
+                    <div class="featured-links">
+                        <a href="https://www.researchgate.net/publication/396462166_Semantic_Discrepancy_and_Hierarchical_Reasoning_for_Multimodal_Rumor_Detection" target="_blank" rel="noopener noreferrer" class="featured-btn">
+                            <i class="fas fa-file-alt"></i> Research Paper
+                        </a>
+                        <a href="https://github.com/rahmanmahbub073" target="_blank" rel="noopener noreferrer" class="featured-btn">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <button class="featured-btn details-btn" data-project="multimodal-rumor-detection">
+                            <i class="fas fa-info-circle"></i> View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects List Section -->
+    <section class="projects-list-section">
+        <div class="max-width">
+            <h2 class="section-title">All Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Academic Search Engine Module -->
+                <div class="project-card" data-category="web ml" data-date="2024">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/projects/academic-search-engine.jpg" alt="Academic Search Engine Module">
+                            <div class="project-overlay">
+                                <button class="view-details-btn" data-project="academic-search">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Academic Search Engine Module</h3>
+                            <div class="project-date">2024 - 2025</div>
+                            <p>An Intelligent Search Engine Module for Academic Networks designed to index academic content and support efficient retrieval for research networks.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>TF-IDF</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rahmanmahbub073/Search-Engine" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-details-link" data-project="academic-search">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tiny Object Detection Study -->
+                <div class="project-card" data-category="dl" data-date="2023">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/projects/tiny-object-detection.jpg" alt="Tiny Object Detection Study">
+                            <div class="project-overlay">
+                                <button class="view-details-btn" data-project="tiny-object-detection">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Tiny Object Detection Study</h3>
+                            <div class="project-date">2023 - 2024</div>
+                            <p>In-Depth Study of Tiny Object Detection Using Deep Learning. Investigated methods for detecting small objects in complex scenes using multi-scale feature fusion.</p>
+                            <div class="project-tech">
+                                <span>YOLOv5/v8</span>
+                                <span>PyTorch</span>
+                                <span>OpenCV</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rahmanmahbub073/TrainingTesting-Yolov5AndYolov8" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-details-link" data-project="tiny-object-detection">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network Anomaly Classification -->
+                <div class="project-card" data-category="ml" data-date="2023">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/projects/network-anomaly.jpg" alt="Network Anomaly Classification">
+                            <div class="project-overlay">
+                                <button class="view-details-btn" data-project="network-anomaly">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Network Anomaly Classification</h3>
+                            <div class="project-date">2023</div>
+                            <p>Built classifiers to detect anomalous network patterns using statistical and machine learning techniques. Improved detection recall through feature engineering.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Data Analysis</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rahmanmahbub073/Anomaly-Classification" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-details-link" data-project="network-anomaly">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- House Rent Price Prediction -->
+                <div class="project-card" data-category="ml" data-date="2022">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/projects/house-rent-prediction.jpg" alt="House Rent Price Prediction">
+                            <div class="project-overlay">
+                                <button class="view-details-btn" data-project="house-rent">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>House Rent Price Prediction</h3>
+                            <div class="project-date">2022</div>
+                            <p>Collected and preprocessed housing data to train regression models for predicting rent prices in Dhaka. Evaluated feature importance and provided actionable insights.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>scikit-learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-details-link" data-project="house-rent">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Content Review System -->
+                <div class="project-card" data-category="dl" data-date="2021">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/projects/image-content-review.jpg" alt="Image Content Review System">
+                            <div class="project-overlay">
+                                <button class="view-details-btn" data-project="image-review">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Image Content Review System</h3>
+                            <div class="project-date">2021</div>
+                            <p>Developed an image content review system based on deep learning object identification. Identifies unwanted images from real-time videos using object detection.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Deep Learning</span>
+                                <span>Object Detection</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1QTyHnraJ_pxPDuIbNAY64PXE2fMIuiiF/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-file-alt"></i>
+                                </a>
+                                <a href="https://github.com/rahmanmahbub073/PythonBased/tree/main/UnwantedImageDetection_server" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-details-link" data-project="image-review">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credit Card Fraud Detection -->
+                <div class="project-card" data-category="ml" data-date="2020">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/projects/credit-card-fraud.jpg" alt="Credit Card Fraud Detection">
+                            <div class="project-overlay">
+                                <button class="view-details-btn" data-project="fraud-detection">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Credit Card Fraud Detection</h3>
+                            <div class="project-date">2020</div>
+                            <p>Developed a machine learning system to identify fraudulent transactions by applying classification algorithms and feature engineering techniques.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Data Analysis</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1FaIDI-M7Sh6dywzJ8JIb-JpOo0cUjytX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-file-alt"></i>
+                                </a>
+                                <a href="https://github.com/rahmanmahbub073/PythonBased/tree/main/credit_card_fraud_detection" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-details-link" data-project="fraud-detection">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Web Applications -->
+                <div class="project-card" data-category="web" data-date="2019">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/projects/enterprise-web-apps.jpg" alt="Enterprise Web Applications">
+                            <div class="project-overlay">
+                                <button class="view-details-btn" data-project="enterprise-web">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Enterprise Web Applications</h3>
+                            <div class="project-date">2019 - 2020</div>
+                            <p>Developed Spring-based Web Applications, SpringBoot, and Spring MVC projects for enterprise use cases and academic demonstrations.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Spring</span>
+                                <span>MVC</span>
+                                <span>SpringBoot</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1QTyHnraJ_pxPDuIbNAY64PXE2fMIuiiF/view" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-file-alt"></i>
+                                </a>
+                                <a href="#" class="project-details-link" data-project="enterprise-web">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- No Results Message -->
+            <div class="no-results">
+                <i class="fas fa-search"></i>
+                <p>No projects match your search criteria</p>
+                <button id="reset-filters">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div class="project-modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="project-detail-header">
+                    <h2 id="modal-title">Project Title</h2>
+                    <div class="project-detail-meta">
+                        <span class="detail-date" id="modal-date">2023</span>
+                        <span class="detail-category" id="modal-category">Deep Learning</span>
+                    </div>
+                </div>
+                
+                <div class="project-detail-gallery">
+                    <div class="gallery-main">
+                        <img id="modal-main-image" src="" alt="Project Image">
+                    </div>
+                    <div class="gallery-thumbs" id="modal-gallery">
+                        <!-- Thumbnails will be added dynamically -->
+                    </div>
+                </div>
+                
+                <div class="project-detail-description">
+                    <h3>Project Overview</h3>
+                    <p id="modal-description"></p>
+                    
+                    <div class="project-detail-info">
+                        <div class="detail-section">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-stack" id="modal-technologies">
+                                <!-- Technologies will be added dynamically -->
+                            </div>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4>Key Features</h4>
+                            <ul id="modal-features">
+                                <!-- Features will be added dynamically -->
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4>Challenges & Solutions</h4>
+                            <div id="modal-challenges">
+                                <!-- Challenges will be added dynamically -->
+                            </div>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h4>Results</h4>
+                            <p id="modal-results"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-detail-actions">
+                        <a href="#" id="modal-github-link" target="_blank" class="detail-btn github">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" id="modal-demo-link" target="_blank" class="detail-btn demo">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" id="modal-paper-link" target="_blank" class="detail-btn paper">
+                            <i class="fas fa-file-alt"></i> Research Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technologies Section -->
+    <section class="technologies-section">
+        <div class="max-width">
+            <h2 class="section-title">Technologies I Work With</h2>
+            
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/tensorflow.png" alt="TensorFlow">
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/pytorch.png" alt="PyTorch">
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/sklearn.png" alt="scikit-learn">
+                            <span>scikit-learn</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/opencv.png" alt="OpenCV">
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/python.png" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/java.png" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/javascript.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/cpp.png" alt="C++">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3><i class="fas fa-database"></i> Data & Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="images/tech/mysql.png" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/spring.png" alt="Spring">
+                            <span>Spring</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/flask.png" alt="Flask">
+                            <span>Flask</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/tech/pandas.png" alt="Pandas">
+                            <span>Pandas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Methodology Section -->
+    <section class="methodology-section">
+        <div class="max-width">
+            <h2 class="section-title">My Project Approach</h2>
+            
+            <div class="methodology-steps">
+                <div class="methodology-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Research & Problem Definition</h3>
+                        <p>Thoroughly researching the problem domain and clearly defining project goals and requirements to establish a solid foundation.</p>
+                    </div>
+                </div>
+                
+                <div class="methodology-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Data Collection & Analysis</h3>
+                        <p>Gathering relevant data, performing exploratory analysis, and preparing datasets for model training and validation.</p>
+                    </div>
+                </div>
+                
+                <div class="methodology-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Model Development</h3>
+                        <p>Designing and implementing machine learning models or algorithms, with iterative testing and refinement.</p>
+                    </div>
+                </div>
+                
+                <div class="methodology-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Evaluation & Optimization</h3>
+                        <p>Rigorously evaluating performance, identifying weaknesses, and optimizing for better accuracy and efficiency.</p>
+                    </div>
+                </div>
+                
+                <div class="methodology-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Documentation & Knowledge Sharing</h3>
+                        <p>Creating comprehensive documentation and sharing findings through publications, presentations, or open-source contributions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration CTA Section -->
+    <section class="collaboration-cta">
+        <div class="max-width">
+            <div class="cta-content">
+                <h2>Have a Project Idea?</h2>
+                <p>I'm always interested in collaborating on innovative projects in AI, machine learning, and software development. Let's discuss how we can work together!</p>
+                <a href="contact.html" class="cta-button">
+                    <i class="fas fa-paper-plane"></i> Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+    
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
