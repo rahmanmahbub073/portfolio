@@ -13,39 +13,94 @@
     padding: 3px 10px;
 }
 
-/* Menu items with larger font */
+/* Base styles for the navbar and menu */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
 .navbar .menu li a {
-    font-size: 17px; /* Increased from 15px */
-    font-weight: 500;
-    padding: 12px 15px; /* Increased padding for better touch targets */
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: nowrap;
 }
 
 .menu-icon {
-    font-size: 16px; /* Increased from 14px */
+    font-size: 14px;
+    width: 18px;
+    margin-right: 5px;
 }
 
 /* Menu button for mobile */
 .navbar .menu-btn {
-    font-size: 26px; /* Increased from 23px */
+    font-size: 24px;
 }
 
 /* Responsive adjustments */
+@media (max-width: 1400px) {
+    .navbar .max-width {
+        padding: 0 15px;
+    }
+    
+    .navbar .menu li a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    
+    .menu-icon {
+        font-size: 13px;
+        margin-right: 4px;
+    }
+}
+
 @media (max-width: 1200px) {
     .navbar .menu li a {
-        padding: 10px 15px;
-        font-size: 16px;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+    
+    .menu-icon {
+        font-size: 12px;
+        width: 16px;
+        margin-right: 3px;
+    }
+    
+    .navbar .logo .logo-text {
+        font-size: 24px;
     }
 }
 
 @media (max-width: 991px) {
+    .navbar .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .navbar .menu li a {
-        font-size: 18px; /* Even larger on mobile for better readability */
-        padding: 16px 22px;
+        font-size: 16px;
+        padding: 12px 20px;
+        width: 100%;
+        justify-content: center;
     }
     
     .menu-icon {
-        font-size: 18px;
-        width: 22px;
+        font-size: 16px;
+        width: 20px;
         margin-right: 8px;
+    }
+    
+    .navbar .menu-btn {
+        font-size: 26px;
+        display: block;
+    }
+    
+    .navbar .menu li {
+        width: 100%;
     }
 }
