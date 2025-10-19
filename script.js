@@ -786,4 +786,27 @@ document.addEventListener('DOMContentLoaded', function() {
         
         img.setAttribute('alt', altText);
     });
+
 });
+
+
+
+document.querySelector('.menu-btn').addEventListener('click', function () {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+});
+// Add fallback for older browsers
+if (!('classList' in document.createElement('_'))) {
+    // Polyfill for classList
+    Element.prototype.classList = {
+        add: function (className) { this.className += ' ' + className; },
+        remove: function (className) { this.className = this.className.replace(className, ''); },
+        toggle: function (className) {
+            if (this.className.indexOf(className) >= 0) {
+                this.className = this.className.replace(className, '');
+            } else {
+                this.className += ' ' + className;
+            }
+        }
+    };
+}
