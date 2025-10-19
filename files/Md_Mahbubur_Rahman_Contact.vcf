@@ -1,0 +1,19 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Rahman;Md Mahbubur;;;
+FN:Md Mahbubur Rahman
+TITLE:AI & Machine Learning Researcher
+EMAIL;TYPE=INTERNET,PREF:rahmanmahbub073@gmail.com
+EMAIL;TYPE=INTERNET:rahmanmahbub073@outlook.com
+TEL;TYPE=CELL,VOICE:+8801781882844
+URL;TYPE=WORK:https://rahmanmahbub073.github.io/portfolio/
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/rahmanmahbub073/
+URL;TYPE=Facebook:https://www.facebook.com/rahmanmahbub073/
+URL;TYPE=GitHub:https://github.com/rahmanmahbub073/
+ADR;TYPE=WORK:;;Beijing Institute of Technology, No.5, South Street, Zhongguancun;Haidian District;Beijing;100081;China
+ADR;TYPE=HOME:;;Charkoilash, Ward No-01, Hatiya Paurashava;Noakhali;;3890;Bangladesh
+IMPP;X-SERVICE-TYPE=WeChat;TYPE=PERSONAL:rahmanmahbub073
+BDAY:19960301
+GENDER:M
+NOTE:AI & Machine Learning Researcher specializing in Computer Vision and Multimodal Intelligence.
+END:VCARD

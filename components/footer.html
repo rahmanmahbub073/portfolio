@@ -1,0 +1,41 @@
+<footer>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn" aria-label="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+            <span>Toggle Theme</span>
+        </button>
+    </div>
+    <div class="social-test">
+        <h2>Find me on social platform</h2>
+        <ul class="social">
+            <a href="https://www.facebook.com/rahmanmahbub073/" class="fb" title="Join me on Facebook">
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://twitter.com/rahmanmahbub073" class="tw" title="Join me on Twitter">
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://www.instagram.com/rahmanmahbub073/" class="ins" title="Join me on Instagram">
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://www.linkedin.com/in/rahmanmahbub073/" class="in" title="Join me on LinkedIn">
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://github.com/rahmanmahbub073" class="git" title="Join me on Github">
+                <li><i class="fa fa-github" aria-hidden="true"></i></li>
+            </a>
+        </ul>
+    </div>
+    <span>Created By <a href="#">Md Mahbubur Rahman</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+    
+    <!-- Ensure Font Awesome is loaded properly -->
+    <script>
+        // Check if Font Awesome is already loaded
+        if (!document.querySelector('link[href*="font-awesome"]')) {
+            // If not loaded, add the link
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+            document.head.appendChild(link);
+        }
+    </script>
+</footer>
