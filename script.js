@@ -101,15 +101,22 @@ $(document).ready(function(){
         }
     });
 
-    // Toggle abstract display
-    $('.abstract-toggle').click(function(){
-        $(this).closest('.publication-content').find('.full-abstract').slideToggle(300);
+    // Fixed Toggle abstract display functionality
+    $('.abstract-toggle').click(function(e){
+        // Prevent any default action and stop event propagation
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const abstractContainer = $(this).closest('.publication-content').find('.full-abstract');
+        abstractContainer.slideToggle(300);
         
         const icon = $(this).find('i');
         if(icon.hasClass('fa-chevron-down')){
             icon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            $(this).html('<i class="fas fa-chevron-up"></i> Hide Abstract');
         } else {
             icon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            $(this).html('<i class="fas fa-chevron-down"></i> Abstract');
         }
     });
 
@@ -908,3 +915,11 @@ document.addEventListener('DOMContentLoaded', function() {
         img.setAttribute('alt', altText);
     });
 });
+
+// Override the default jQuery behavior for the abstract-toggle buttons on touch devices
+if ('ontouchstart' in window) {
+    $(document).on('touchend', '.abstract-toggle', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+}
