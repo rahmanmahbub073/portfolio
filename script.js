@@ -1,13 +1,20 @@
 $(document).ready(function(){
+    // Wait for the DOM to be fully loaded
+    
+    // Handle navbar toggle functionality directly
+    $(document).on('click', '.menu-btn', function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+
+    // Handle scroll behavior
     $(window).scroll(function(){
-        // sticky navbar on scroll script
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
         }else{
             $('.navbar').removeClass("sticky");
         }
         
-        // scroll-up button show/hide script
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
         }else{
@@ -15,22 +22,136 @@ $(document).ready(function(){
         }
     });
 
-    // slide-up script
+    // Slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
-        $('html').css("scrollBehavior", "auto");
     });
 
-    $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
+    // Enable the typing animation if it exists
+    if($('.typing').length) {
+        var typed = new Typed(".typing", {
+            strings: ["Developer", "Designer", "Researcher", "Computer Vision Specialist", "Deep Learning Researcher"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    }
+
+    if($('.typing-2').length) {
+        var typed = new Typed(".typing-2", {
+            strings: ["Developer", "Designer", "Researcher", "Computer Vision Specialist", "Deep Learning Researcher"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    }
+
+    // Initialize carousel if it exists
+    if($('.carousel').length) {
+        $('.carousel').owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeOut: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0:{
+                    items: 1,
+                    nav: false
+                },
+                600:{
+                    items: 2,
+                    nav: false
+                },
+                1000:{
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+    }
+
+    // Project filters
+    $('.filter-btn').click(function(){
+        const filter = $(this).data('filter');
+        
+        $('.filter-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        if(filter === 'all'){
+            $('.project-item').show(300);
+        } else {
+            $('.project-item').hide(300);
+            $('.project-item[data-category*="' + filter + '"]').show(300);
+        }
     });
 
-    // toggle menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+    // Publication filters
+    $('.publication-filter-btn').click(function(){
+        const filter = $(this).data('filter');
+        
+        $('.publication-filter-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        if(filter === 'all'){
+            $('.publication-item').show(300);
+        } else {
+            $('.publication-item').hide(300);
+            $('.publication-item[data-category="' + filter + '"]').show(300);
+        }
+    });
+
+    // Toggle abstract display
+    $('.abstract-toggle').click(function(){
+        $(this).closest('.publication-content').find('.full-abstract').slideToggle(300);
+        
+        const icon = $(this).find('i');
+        if(icon.hasClass('fa-chevron-down')){
+            icon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+        } else {
+            icon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        }
+    });
+
+    // Leadership tabs
+    $('.tab-btn').click(function(){
+        const tab = $(this).data('tab');
+        
+        $('.tab-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        $('.tab-content').removeClass('active');
+        $('#' + tab + '-tab').addClass('active');
+    });
+
+    // Skills filter
+    $('.skill-filter-btn').click(function(){
+        const filter = $(this).data('filter');
+        
+        $('.skill-filter-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        if(filter === 'all'){
+            $('.skill-card').show(300);
+        } else {
+            $('.skill-card').hide(300);
+            $('.skill-card[data-category="' + filter + '"]').show(300);
+        }
+    });
+
+    // Awards filter
+    $('.award-filter-btn').click(function(){
+        const filter = $(this).data('filter');
+        
+        $('.award-filter-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        if(filter === 'all'){
+            $('.award-item').show(300);
+        } else {
+            $('.award-item').hide(300);
+            $('.award-item[data-category="' + filter + '"]').show(300);
+        }
     });
 
     // Highlight active navigation item based on current page
