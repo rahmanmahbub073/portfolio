@@ -7,29 +7,37 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // After loading navigation, initialize its scripts
             initNavigation();
+        })
+        .catch(error => {
+            console.error('Error loading navigation:', error);
         });
     
-    // Load footer component
-    fetch('components/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-            
-            // After loading footer, initialize its scripts
-            initFooter();
-        });
+    // Load footer component if it exists
+    if (document.getElementById('footer-placeholder')) {
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+                
+                // After loading footer, initialize its scripts
+                initFooter();
+            })
+            .catch(error => {
+                console.error('Error loading footer:', error);
+            });
+    }
 });
 
 // Initialize navigation functionality
 function initNavigation() {
-    // Toggle menu/navbar script
+    // Toggle menu/navbar script - add event listener directly to the button
     const menuBtn = document.querySelector('.menu-btn');
-    const navbar = document.querySelector('.navbar');
+    const menu = document.querySelector('.navbar .menu');
     
-    if (menuBtn) {
+    if (menuBtn && menu) {
         menuBtn.addEventListener('click', function() {
-            navbar.querySelector('.menu').classList.toggle("active");
-            menuBtn.querySelector('i').classList.toggle("active");
+            menu.classList.toggle("active");
+            this.querySelector('i').classList.toggle("active");
         });
     }
     
@@ -51,11 +59,13 @@ function initNavigation() {
                 hashLink.classList.add('active');
             } else {
                 // Default to home if no matching hash link
-                document.querySelector('.navbar .menu li a[href="index.html#home"]').classList.add('active');
+                const homeLink = document.querySelector('.navbar .menu li a[href="index.html#home"]');
+                if (homeLink) homeLink.classList.add('active');
             }
         } else {
             // No hash, so highlight home
-            document.querySelector('.navbar .menu li a[href="index.html#home"]').classList.add('active');
+            const homeLink = document.querySelector('.navbar .menu li a[href="index.html#home"]');
+            if (homeLink) homeLink.classList.add('active');
         }
     } else {
         // For other pages, find the matching link
@@ -68,6 +78,15 @@ function initNavigation() {
     // Add smooth scrolling for navigation items
     document.querySelectorAll('.navbar .menu li a[href^="index.html#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
+            // Close the mobile menu when a link is clicked
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                if (menuBtn) {
+                    const menuBtnIcon = menuBtn.querySelector('i');
+                    if (menuBtnIcon) menuBtnIcon.classList.remove("active");
+                }
+            }
+            
             // Check if we're already on the index page
             if (window.location.pathname.endsWith('index.html') || 
                 window.location.pathname.endsWith('/')) {
@@ -109,10 +128,13 @@ function initNavigation() {
     
     // Update navbar on scroll
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 20) {
-            navbar.classList.add("sticky");
-        } else {
-            navbar.classList.remove("sticky");
+        const navbar = document.querySelector('.navbar');
+        if (navbar) {
+            if (window.scrollY > 20) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
         
         if (scrollUpBtn) {
