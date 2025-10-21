@@ -122,6 +122,24 @@ $(document).ready(function(){
     // Attach both click and touchend events to the abstract toggle button
     $('.abstract-toggle').on('click touchend', toggleAbstract);
 
+    // Specifically target and initialize abstract toggles in the index.html's Publications section
+    $('#publications .publication-content .abstract-toggle').on('click touchend', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const abstractContainer = $(this).closest('.publication-content').find('.full-abstract');
+        abstractContainer.slideToggle(300);
+        
+        const icon = $(this).find('i');
+        if (icon.hasClass('fa-chevron-down')) {
+            icon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+            $(this).html('<i class="fas fa-chevron-up"></i> Hide Abstract');
+        } else {
+            icon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            $(this).html('<i class="fas fa-chevron-down"></i> Abstract');
+        }
+    });
+
     // Leadership tabs
     $('.tab-btn').click(function(){
         const tab = $(this).data('tab');
@@ -925,5 +943,3 @@ if ('ontouchstart' in window) {
         e.stopPropagation();
     });
 }
-
-
