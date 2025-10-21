@@ -28,23 +28,23 @@ $(document).ready(function(){
     });
 
     // Enable the typing animation if it exists
-    if($('.typing').length) {
-        var typed = new Typed(".typing", {
-            strings: ["Developer", "Designer", "Researcher", "Computer Vision Specialist", "Deep Learning Researcher"],
-            typeSpeed: 100,
-            backSpeed: 60,
-            loop: true
-        });
-    }
+    // if($('.typing').length) {
+    //     var typed = new Typed(".typing", {
+    //         strings: ["Developer", "Designer", "Researcher", "Computer Vision Specialist", "Deep Learning Researcher"],
+    //         typeSpeed: 100,
+    //         backSpeed: 60,
+    //         loop: true
+    //     });
+    // }
 
-    if($('.typing-2').length) {
-        var typed = new Typed(".typing-2", {
-            strings: ["Developer", "Designer", "Researcher", "Computer Vision Specialist", "Deep Learning Researcher"],
-            typeSpeed: 100,
-            backSpeed: 60,
-            loop: true
-        });
-    }
+    // if($('.typing-2').length) {
+    //     var typed = new Typed(".typing-2", {
+    //         strings: ["Developer", "Designer", "Researcher", "Computer Vision Specialist", "Deep Learning Researcher"],
+    //         typeSpeed: 100,
+    //         backSpeed: 60,
+    //         loop: true
+    //     });
+    // }
 
     // Initialize carousel if it exists
     if($('.carousel').length) {
@@ -925,4 +925,5 @@ if ('ontouchstart' in window) {
         e.stopPropagation();
     });
 }
+
 
