@@ -487,7 +487,7 @@
                             Multimodal Rumor Detection.</h3>
                         <div class="publication-authors">Md Mahbubur Rahman, Shufeng Hao, Chongyang Shi, An Lao, Jinyan Liu</div>
                         <div class="publication-venue">The 2025 Conference on Empirical Methods in Natural Language Processing, Association for Computational Linguists (ACL)</div>
-                        <p class="publication-abstract">The rapid growth of social media platforms has made the spread of rumors a significant issue, frequently driven by both textual and visual content. </p>
+                        <p class="publication-abstract">The rise of multimodal content on social platforms has led to the rapid spread of complex and persuasive false narratives, combining of text and images. </p>
                         <div class="publication-tags">
                             <span>Computer Vision</span>
                             <span>Object Detection</span>
@@ -505,7 +505,7 @@
                             </button>
                         </div>
                         <div class="full-abstract">
-                            <p>Traditional rumor detection models generally rely on semantic alignment between modalities, thus suppressing modality inconsistencies as noise. However, semantic variations, such as neutral visuals paired with deceptive text, could serve as deliberate indicators of rumor. To address this problem, we propose a novel multimodal Rumor Amplification Detection And Reasoning (RADAR) framework that interprets cross-modal discrepancies as potential indicators to be amplified. RADAR contains a semantic discrepancy amplifier (SDA) module, a progressive feature purification (PFP) module, and a feature feedback loop (FFL) module. First, SDA employs an adaptive amplification technique to amplify the discrepancies between modalities and uses a attention mechanism to capture variations across semantic levels. Then PFP gradually refines the features on the different discrepancy levels to capture highly suspicious rumor content. Finally, FFL iteratively strengthens semantic representations using discrepancy-aware purification cycles for deeper reasoning over complex rumor patterns. Extensive experiments on large-scale datasets on Weibo and Twitter demonstrate that RADAR can detect cross-modal rumors more effectively than current techniques.</p>
+                            <p>Traditional rumor detection models attempt to identify such content by relying on textual cues or employing shallow multimodal fusion techniques. However, these methods often assume a simplistic one-to-one alignment between modalities, overlooking the richer hierarchical relationships across modalities, failing to capture the layered structure of meaning. In this paper, we present RumorCone, a novel method that employs hyperbolic geometry in order to preserve hierarchical, non-linear relationships, rather than representing them at a flat semantic level. First, RumorCone decomposes image and text content into three levels: base, mid, and high-level abstractions, and embeds them in hyperbolic space to model their tree-like semantic structure. Second, a dynamic hyperbolic multimodal attention mechanism aligns features across modalities and levels, and a flexible fusion strategy adjusts the contribution of each modality based on alignment quality. Our experiments indicate the importance of hierarchical semantic modeling for robust and interpretable multimodal rumor detection.</p>
                         </div>
                     </div>
                 </div>
@@ -1362,5 +1362,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
